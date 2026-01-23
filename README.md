@@ -1,1 +1,1 @@
-git remote set-url origin https://github.com/bhumika/bhumi.git
+git remote set-url origin https://github.com/aashishupadhayay/bhumi.git
