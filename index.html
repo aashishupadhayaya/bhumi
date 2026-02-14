@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aashish Upadhayay | AI & Security Specialist</title>
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         /* CSS Variables */
         :root {
@@ -35,7 +38,7 @@
         }
 
         body {
-            font-family: 'Inter', 'Segoe UI', sans-serif;
+            font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
             color: var(--light);
             line-height: 1.6;
@@ -464,6 +467,13 @@
             margin-bottom: 20px;
         }
 
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--light);
+        }
+
         .form-control {
             width: 100%;
             padding: 15px;
@@ -471,7 +481,7 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             background: rgba(15, 23, 42, 0.7);
             color: var(--light);
-            font-family: inherit;
+            font-family: 'Inter', sans-serif;
             font-size: 1rem;
             transition: var(--transition);
         }
@@ -753,7 +763,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Hey, I'm <span class="typing-text"></span>Aasish</h1>
+                    <h1>Hey, I'm <span class="typing-text">Aashish</span></h1>
                     <p>AI Developer & Ethical Hacker with a passion for creating secure, intelligent systems. I specialize in building AI solutions and identifying security vulnerabilities to protect digital assets.</p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -773,7 +783,7 @@
             <h2>Featured Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="AI Project" class="project-img">
+                    <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="AI Project" class="project-img">
                     <div class="project-info">
                         <h3>AI Chatbot</h3>
                         <p>Built an AI-powered chatbot using NLP and Python to simulate human-like conversations. The chatbot can understand context, remember user preferences, and provide intelligent responses.</p>
@@ -787,7 +797,7 @@
                 </div>
 
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Web Security" class="project-img">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Web Security" class="project-img">
                     <div class="project-info">
                         <h3>Web Security Tool</h3>
                         <p>Developed a vulnerability scanner to detect SQL injection and XSS flaws using Python. The tool automates security testing and provides detailed reports with remediation suggestions.</p>
@@ -801,7 +811,7 @@
                 </div>
                 
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Cybersecurity" class="project-img">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Cybersecurity" class="project-img">
                     <div class="project-info">
                         <h3>Network Security Monitor</h3>
                         <p>Created a real-time network monitoring system that detects and alerts on suspicious activities. The system uses machine learning to identify potential threats and anomalies.</p>
@@ -914,20 +924,22 @@
                 </div>
                 
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formspree.io/f/mreaeroy" method="POST">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <label class="form-label">Your Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="e.g., John Doe" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <label class="form-label">Email Address</label>
+                            <input type="email" name="email" class="form-control" placeholder="e.g., john@example.com" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject" required>
+                            <label class="form-label">Your Message</label>
+                            <textarea name="message" class="form-control" placeholder="Your message here..." required></textarea>
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
                     </form>
                 </div>
             </div>
@@ -1037,7 +1049,7 @@
         const projects = {
             'ai-chatbot': {
                 title: 'AI Chatbot',
-                image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+                image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
                 description: 'Built an AI-powered chatbot using NLP and Python to simulate human-like conversations. The chatbot can understand context, remember user preferences, and provide intelligent responses.',
                 features: [
                     'Natural Language Processing for understanding user queries',
@@ -1045,13 +1057,12 @@
                     'Machine learning algorithms for response generation',
                     'Integration with multiple messaging platforms',
                     'Customizable personality and response styles'
-                    
                 ],
                 technologies: ['Python', 'TensorFlow', 'NLTK', 'Flask', 'WebSockets']
             },
             'security-tool': {
                 title: 'Web Security Tool',
-                image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+                image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
                 description: 'Developed a vulnerability scanner to detect SQL injection and XSS flaws using Python. The tool automates security testing and provides detailed reports with remediation suggestions.',
                 features: [
                     'Automated scanning for SQL injection vulnerabilities',
@@ -1064,7 +1075,7 @@
             },
             'network-monitor': {
                 title: 'Network Security Monitor',
-                image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+                image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
                 description: 'Created a real-time network monitoring system that detects and alerts on suspicious activities. The system uses machine learning to identify potential threats and anomalies.',
                 features: [
                     'Real-time network traffic analysis',
